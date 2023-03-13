@@ -46,7 +46,7 @@
 
 </template>
 
-<style scoped>
+<!-- <style scoped> -->
 
 @keyframes  myAnimation {
         from {left: 0%;}
