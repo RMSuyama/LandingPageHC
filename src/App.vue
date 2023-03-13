@@ -1,107 +1,245 @@
 
 <template>
-<nav class="navbar navbar-expand-lg .bg-body-secondary fixed-top" id="navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand" href=""><img id="logo" src="./assets/hc.png" alt="Example Image" /></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.instagram.com/suyama.adv/">Fotos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.linkedin.com/in/rafael-moreira-suyama-0043bb189/">Spotify</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://wa.me/5513996267989">Shows</a>
-        </li>
-      </ul>
-      <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Entre em contato comigo!
-          </a>
-          
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://www.instagram.com/riqcarneiro/"><img id="ico2" src="./assets/instagram.svg" alt="Insta" /> Instagram</a></li>
-            <li><a class="dropdown-item" href="https://www.linkedin.com/in/rafael-moreira-suyama-0043bb189/"><img id="ico2" src="./assets/linkedin.svg" alt="Linkedin" /> LinkedIn</a></li>
-            <li><a class="dropdown-item" href="https://wa.me/5513996267989"><img id="ico2" src="./assets/whatsapp.svg" alt="Whats" />Whatsapp</a></li>
+<div>
+<header>
+  <navbarComp></navbarComp>
+</header>
 
-            
-          </ul>
-        </div>
-    </div>
-  </div>
-</nav>
-    <div id="sobremim">
 
-      <div class="card-body" id="left">
-        <p> Conheça Henrique Carneiro, um cantor e violonista talentoso que faz a alma do choro e do samba vibrar. Formado no Conservatório de Música, Henrique é um músico experiente e possui um vasto repertório que varia de clássicos a novas composições.</p>
 
-        <p>Com sua habilidade no violão, ele cria melodias que enchem a plateia de emoção e vida, envolvendo a todos em uma atmosfera única e envolvente. Seu estilo único de interpretar o choro e o samba, com a essência da música brasileira, cativa a todos que o ouvem.</p>
+<div>
 
-        <p>Não perca a oportunidade de ver Henrique Carneiro ao vivo em seu próximo show. Acompanhado de outros músicos talentosos, Henrique promete uma noite inesquecível com muito ritmo, harmonia e emoção. Venha sentir a música brasileira de uma forma única e autêntica, com Henrique Carneiro. Garanta já seu ingresso e venha celebrar conosco!</p>       </div>
-    </div>
+<div id="t">Regularização Imobiliária</div>
 
-    <div id="carousel" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./assets/violão1.png" class="d-block w-100" alt="1..">
-    </div>
-    <div class="carousel-item">
-      <img src="./assets/violão2.png" class="d-block w-100" alt="2..">
-    </div>
-    <div class="carousel-item">
-      <img src="./assets/violão3.png" class="d-block w-100" alt="3..">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div id="t1">Advocacia Imobiliária</div>
+
+<div id="t2">Regularização e Consultoria Jurídica</div>
+
+  
+  <!-- <video id="videozinho" width="100%" poster="./assets/logo.png" autoplay loop muted >
+    <source src="./assets/teclado-de-computador-3188.mp4" type="video/mp4">
+    Seu navegador não suporta a reprodução de vídeo.
+  </video> -->
+
+
+<video  id="background-video" autoplay loop muted>
+  <source src="./assets/tarde-29980.mp4" type="video/mp4">
+  
+  Seu navegador não suporta a reprodução de vídeo.
+</video>
+
+
 </div>
 
-<footer class="navbar navbar-expand-lg .bg-body-secondary fixed-bot" id="navbar">teste</footer>
+
+
+ 
+
+    <!-- <carrosselComp></carrosselComp> -->
+    <sobreComp></sobreComp>
+    <endereçoComp></endereçoComp>
+
+    <redeSocialComp></redeSocialComp>
+
+</div>
+
+
+
+
+
 </template>
 
 <style scoped>
+
+@keyframes  myAnimation {
+        from {left: 0%;}
+        to {left: 10%;}
+    }
+    /* Hien thi cho Firefox */
+    @-moz-keyframes myAnimation {
+        from {left: 0%;}
+        to {left: 10%;}
+    }
+    /* Hien thi cho Safari and Chrome */
+    @-webkit-keyframes myAnimation {
+        from {left: 0%;}
+        to {left: 10%;}
+    }
+    /* Hien thi cho Opera */
+    @-o-keyframes myAnimation {
+        from {left: 0%;}
+        to {left: 10%;}
+    }
+
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+#whats{
+  height: 75px;
+
+}
+
+#inscreva{
+  padding:20px;
+}
+
+#t{
+    background-color: black;
+    margin-top: 15%;
+    padding-left: 15%;
+    margin-right: 15%;
+    color:aliceblue;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    text-align:center;
+    /* text-transform: uppercase; */
+
+    animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+  -moz-animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+  -webkit-animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+  -o-animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+  animation-fill-mode: forwards;
+  }
+
+  #t1{
+
+    background-color: black;
+    margin-top: 40%;
+    
+    color:aliceblue;
+    position: relative;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    /* text-transform: uppercase; */
+   
+
+  animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+  -moz-animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+  -webkit-animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+  -o-animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+  animation-fill-mode: forwards;
+  }
+
+  
+@keyframes  myAnimation2 {
+        from {right: 0%;}
+        to {right: 10%;}
+    }
+    /* Hien thi cho Firefox */
+    @-moz-keyframes myAnimation2 {
+        from {right: 0%;}
+        to {right: 10%;}
+    }
+    /* Hien thi cho Safari and Chrome */
+    @-webkit-keyframes myAnimation2 {
+        from {right: 0%;}
+        to {right: 10%;}
+    }
+    /* Hien thi cho Opera */
+    @-o-keyframes myAnimation2 {
+        from {right: 0%;}
+        to {right: 10%;}
+    }
+
+    #h5{-webkit-box-shadow: 11px 13px 24px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 11px 13px 24px 0px rgba(0,0,0,0.75);
+box-shadow: 11px 13px 24px 0px rgba(0,0,0,0.75);}
+
+  #t2 {
+
+    background-color: black;
+ 
+    padding-bottom: 3%;
+    position: relative;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 2500;
+    color:aliceblue;
+    text-align: center;
+
+    animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+    -moz-animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+   -webkit-animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+   -o-animation: myAnimation2 2s ease 0.5s 1 normal forwards;
+   animation-fill-mode: forwards;
+
+  }
+
+
+
+#floatingWhatsApp {
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  z-index: 9999; /* set a high z-index value */
+}
+
+
+
+h1 {
+  font-size:xx-large;
+  text-align: center;
+  padding-top: 3vw;
+  }
+
+h2 {
+   padding-bottom: 3vw;
+  font-size:large;
+  text-align: center;
+}
+
+
+h3 {
+
+  text-align: left;
+  padding: 10px;
+
+}
 
 #navbar {
   z-index: 9999;
 }
 
-#sobremim {
-  padding-top: 10vh; /* ajuste o valor conforme necessário */
-  padding-left: -30vw;
+
+
+
+#navbar{
+  background-color:white;
 }
 
-#logo{
-  width:5vw;
-  height:4.5vw;
-}
-
-#left{
-  text-indent: 20px;
-  text-align: justify;
-  padding: 5px;
-  margin: 2vw;
-}
-
-#ico2{
-  width:1.5vw;
-  height:1.5vw;
-  margin-right: 1vw;
-}
-
-#carousel{
-  padding-top:15vh;
-}
 </style>
+
+<script>
+import navbarComp from '@/components/Header/Navbar.vue'
+import endereçoComp from '@/components/Footer/Endereço.vue'
+import redeSocialComp from '@/components/Footer/RedesSociais.vue'
+import sobreComp from '@/components/Footer/Sobre.vue'
+import carrosselComp from '@/components/Carroussel.vue'
+
+
+export default {
+  components: {
+    navbarComp,
+    endereçoComp,
+    redeSocialComp,
+    sobreComp,
+    carrosselComp,
+
+  }
+}
+</script>
