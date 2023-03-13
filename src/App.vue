@@ -272,11 +272,11 @@ h3 {
 </style>
 
 <script>
+
 import navbarComp from '@/components/Header/Navbar.vue'
 import endereçoComp from '@/components/Footer/Endereço.vue'
 import redeSocialComp from '@/components/Footer/RedesSociais.vue'
 import sobreComp from '@/components/Footer/Sobre.vue'
-import carrosselComp from '@/components/Carroussel.vue'
 
 
 export default {
@@ -285,7 +285,6 @@ export default {
     endereçoComp,
     redeSocialComp,
     sobreComp,
-    carrosselComp,
 
   }
 }
